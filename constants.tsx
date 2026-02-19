@@ -4,7 +4,7 @@ import React from 'react';
 
 // Using local profile image. Please ensure 'profile.png' is placed in the project root/public folder.
 export const IMAGES = {
-  profile: "./MY_photo.png", 
+  profile: "./assets/MY_photo.png", 
   treko: "https://placehold.co/600x400/10101c/5b6af0?text=Treko+App", // Dark blue/purple theme from screenshot
   easyBook: "https://placehold.co/600x400/181828/22d3ee?text=EasyBook+App", // Colorful abstract theme from screenshot
 };
