@@ -61,13 +61,19 @@ const Hero: React.FC = () => {
           </div>
 
           <div className="flex-1 flex justify-center md:justify-end">
-            <div className="relative w-64 h-64 md:w-80 md:h-80">
+            {/* Adjusted container for portrait aspect ratio */}
+            <div className="relative w-64 md:w-80 aspect-[3/4]">
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-3xl rotate-6 opacity-20 animate-pulse"></div>
               <div className="absolute inset-0 bg-white/5 backdrop-blur-sm rounded-3xl -rotate-6 border border-white/10"></div>
               <img 
                 src={IMAGES.profile} 
                 alt="Jehad Fostok" 
                 className="absolute inset-0 w-full h-full object-cover rounded-2xl shadow-2xl border-2 border-white/10"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  // Fallback if the user hasn't uploaded the image yet
+                  target.src = "https://placehold.co/600x800/171717/ffffff?text=Upload+profile.png";
+                }}
               />
             </div>
           </div>
