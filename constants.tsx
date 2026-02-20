@@ -1,10 +1,12 @@
 import { Project, Experience, Skill } from './types';
 import { Github, Linkedin, Mail, MapPin, Smartphone, Database, Globe } from 'lucide-react';
 import React from 'react';
+import myPhoto from './assets/MY_photo.png';
+
 
 // Using local profile image. Please ensure 'profile.png' is placed in the project root/public folder.
 export const IMAGES = {
-  profile: "./assets/MY_photo.png", 
+  profile: myPhoto, 
   treko: "https://placehold.co/600x400/10101c/5b6af0?text=Treko+App", // Dark blue/purple theme from screenshot
   easyBook: "https://placehold.co/600x400/181828/22d3ee?text=EasyBook+App", // Colorful abstract theme from screenshot
 };
