@@ -6,7 +6,7 @@ import myPhoto from './assets/MY_photo.png';
 
 // Using local profile image. Please ensure 'profile.png' is placed in the project root/public folder.
 export const IMAGES = {
-  profile: myPhoto, 
+  profile: myPhoto,
   treko: "https://placehold.co/600x400/10101c/5b6af0?text=Treko+App", // Dark blue/purple theme from screenshot
   easyBook: "https://placehold.co/600x400/181828/22d3ee?text=EasyBook+App", // Colorful abstract theme from screenshot
 };
@@ -29,7 +29,7 @@ export const EXPERIENCE: Experience[] = [
   {
     company: "Subh",
     role: "Computer Engineer",
-    period: "Nov 2024 - Present", 
+    period: "Nov 2024 - Present",
     location: "Makkah",
     description: [
       "Building new features for the platform.",
@@ -107,7 +107,7 @@ export const SKILLS: Record<string, Skill[]> = {
   frameworks: [
     { name: "Flutter", iconClass: "devicon-flutter-plain colored" },
     { name: "Unity", iconClass: "devicon-unity-original colored" },
-    { name: "React", iconClass: "devicon-react-original colored" },
+    // { name: "React", iconClass: "devicon-react-original colored" },
     { name: "TensorFlow", iconClass: "devicon-tensorflow-original colored" },
   ],
   tools: [
